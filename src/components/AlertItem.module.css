@@ -9,17 +9,17 @@
   
 
 }
-.headerElement li {
+.headerElement .alertLi {
     width: 25%;
     display: flex;
     justify-content: space-evenly;
-    border-right: 1px #fff solid;
+    border-right: 1px #999999 solid;
     
 }
 .headerElement :last-child{
     border: none;
 }
-.headerElement li:hover {
+.headerElement .alertLi:hover {
     cursor: pointer;
 }
 

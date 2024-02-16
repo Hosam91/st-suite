@@ -1,0 +1,22 @@
+.selectBox{
+    text-align: center;
+    width: 45%;
+
+}
+
+
+.selectItem{
+    text-transform: capitalize;
+    color: #c2bfbf39;
+    padding: .2rem;
+    font-size: 14px;
+    transition: all .4s;
+
+}
+.selectItem:hover {
+    background-color: #53ACFF;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}

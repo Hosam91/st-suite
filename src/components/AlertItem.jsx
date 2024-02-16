@@ -27,19 +27,19 @@ export default function AlertItem({data})
                     return (
                         <div key={index} onClick={()=>toggleShowText(index)}>
                         <ul className={`${styles.headerElement} ${activeId === index ? styles.bg : ''}`}>
-                          <li>
+                          <li className={styles.alertLi }>
                             <div className="icon">
                               <FontAwesomeIcon icon={faTag} rotation={90} size="xl" />{' '}
                             </div>
                             <div className="text">{companyName}</div>
                           </li>
-                          <li>
+                           <li className={styles.alertLi }>
                             <div className="icon">
                               <FontAwesomeIcon icon={faFileInvoice} size="xl" />
                             </div>
                             <div className="text">{invoiceNumber}</div>
                           </li>
-                          <li>
+                           <li className={styles.alertLi }>
                             <div className="icon">
                               <FontAwesomeIcon icon={faArrowTrendUp} size="xl" />
                             </div>
@@ -47,7 +47,7 @@ export default function AlertItem({data})
                                         {result}
                                     </div>
                           </li>
-                          <li>
+                           <li className={styles.alertLi }>
                             <div className="icon">
                               <FontAwesomeIcon icon={faMoneyBill} size="xl" />
                             </div>

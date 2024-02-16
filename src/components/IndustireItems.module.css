@@ -1,0 +1,33 @@
+.industries {
+    column-count: 2;
+    max-height: 250px;
+    overflow: auto;
+    padding: 1rem;
+    transition: all .3s;
+  }
+  .indusriesList {
+    list-style: none;
+    border-left: 1px solid #fff;
+  }
+  .item {
+      padding: .5rem;
+      font-size: 12px;
+      padding: .1rem .3rem;
+      margin: .5rem;
+      display: flex;
+      overflow: visible;
+  }
+  
+  .item:hover {
+      background-color: #53ACFF;
+      border-radius: 4px;
+  
+  }
+  .item span{
+      margin-right: .5rem;
+      text-transform: capitalize;
+  }
+  
+  .hideIndustry {
+      display: none;
+  }

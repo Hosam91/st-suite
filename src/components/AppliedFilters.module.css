@@ -1,0 +1,28 @@
+.upBtns{
+    display: flex;
+    justify-content: space-between;
+
+}
+.upBtns .applied{
+    color: #99999999;
+
+}
+.upBtns .clr{
+    color:#ddd ;
+}
+.AppliedFilters{
+    max-height: 70px;
+    overflow: scroll;
+}
+.AppliedFilters span {
+    background: #53ACFF;
+    color: #000;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: .1rem .3rem;
+    margin: .5rem;
+}
+.AppliedFilters span:hover {
+    cursor: pointer;
+    
+}
