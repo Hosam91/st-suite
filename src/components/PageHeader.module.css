@@ -1,0 +1,26 @@
+.PageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pageTitle {
+  max-width: 20%;
+  border-left: 4px solid #53acff;
+  max-height: 72px;
+  padding-left: 0.4rem;
+}
+.pageTitle h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  /* line-height: 72px; */
+  font-size: 35px;
+}
+.search {
+  width: 70%;
+}
+.notify {
+  width: 10%;
+}
+.bell {
+  color: #53acff;
+}

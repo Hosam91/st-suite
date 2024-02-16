@@ -1,0 +1,53 @@
+.headerElement{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding: .7rem;
+    background-color: #424242;
+    border-radius:5px ;
+    margin-top: 1rem;
+  
+
+}
+.headerElement li {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    border-right: 1px #fff solid;
+    
+}
+.headerElement :last-child{
+    border: none;
+}
+.headerElement li:hover {
+    cursor: pointer;
+}
+
+.textElement{
+    margin-top: 0px;
+    padding: 1rem;
+    background-color: #222222;
+    display: none;
+    /* transition: all 3s; */
+    opacity: 0;
+    transition: opacity display 0.5s ease;
+}
+.textElement p{
+    margin-top: .4rem;
+    padding: .4rem;
+    transition: all 3s;
+
+}
+.active{
+    display: block;
+    opacity:1
+}
+.bg{
+    background-color: #53ACFF;
+}
+.up{
+    color:#118F4B ;
+}
+.down{
+color:#D94111
+}

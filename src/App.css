@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #202020;
+  color: #fff;
+  font-family: 'Poppins', sans-serif; 
+  scrollbar-width: thin;
+  scrollbar-color: rgb(29, 28, 28) rgb(44, 43, 43);
+}
+
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+.card{
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 5% 1fr 29%;
+  grid-template-areas: 'menu main sidebar';
+  height: 100vh;
+}
+
+.menu-bar {
+  grid-area: menu;
+  
+  background-color: #181818;
+}
+
+.main-content {
+  grid-area: main;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #181818;
+
+} 
+.sidebar,.main-content ,.menu-bar{
+  padding: 1rem;
+}
+.sidebar,.main-content {
+  margin-top: 1rem;
+  
+}
+
+
+
+/* This styles the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #000; /* Light grey background */
+}
+
+/* This styles the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #000; /* Dark grey handle */
+}
+
+/* On hover over the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #000; /* Even darker grey */
+}
