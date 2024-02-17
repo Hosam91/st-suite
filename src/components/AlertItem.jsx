@@ -28,19 +28,19 @@ export default function AlertItem({data})
                         <div key={index} onClick={()=>toggleShowText(index)}>
                         <ul className={`${styles.headerElement} ${activeId === index ? styles.bg : ''}`}>
                           <li className={styles.alertLi }>
-                            <div className="icon">
+                            <div className={styles.icon}>
                               <FontAwesomeIcon icon={faTag} rotation={90} size="xl" />{' '}
                             </div>
-                            <div className="text">{companyName}</div>
+                            <div className={styles.text}>{companyName}</div>
                           </li>
                            <li className={styles.alertLi }>
-                            <div className="icon">
+                            <div className= {styles.icon}>
                               <FontAwesomeIcon icon={faFileInvoice} size="xl" />
                             </div>
-                            <div className="text">{invoiceNumber}</div>
+                            <div className={styles.text}>{invoiceNumber}</div>
                           </li>
                            <li className={styles.alertLi }>
-                            <div className="icon">
+                            <div className={styles.icon}>
                               <FontAwesomeIcon icon={faArrowTrendUp} size="xl" />
                             </div>
                                     <div className={win?styles.up:styles.down }>
@@ -48,10 +48,10 @@ export default function AlertItem({data})
                                     </div>
                           </li>
                            <li className={styles.alertLi }>
-                            <div className="icon">
+                            <div className={styles.icon}>
                               <FontAwesomeIcon icon={faMoneyBill} size="xl" />
                             </div>
-                            <div className="text">{risk}</div>
+                            <div className={styles.text}>{risk}</div>
                           </li>
                             </ul>
                             

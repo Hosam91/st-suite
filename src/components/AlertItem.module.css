@@ -2,6 +2,8 @@
     width: 100%;
     list-style: none;
     display: flex;
+    align-items: center;
+
     padding: .7rem;
     background-color: #424242;
     border-radius:5px ;
@@ -29,8 +31,7 @@
     background-color: #222222;
     display: none;
     /* transition: all 3s; */
-    opacity: 0;
-    transition: opacity display 0.5s ease;
+     transition: all   0.5s ease;
 }
 .textElement p{
     margin-top: .4rem;
@@ -40,8 +41,7 @@
 }
 .active{
     display: block;
-    opacity:1
-}
+ }
 .bg{
     background-color: #53ACFF;
 }
@@ -50,4 +50,20 @@
 }
 .down{
 color:#D94111
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    
+    .icon{
+        font-size: small;
+    }
+    .text{
+        font-size: small;
+    }
+    .headerElement{
+        padding: .2rem;
+        align-items: center;
+    }
 }

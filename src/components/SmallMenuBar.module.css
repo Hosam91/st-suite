@@ -14,6 +14,13 @@
 .up{
     height: 85%;
 }
+
+.navItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .navTab{
     display: flex;
     justify-content: space-between;
@@ -62,21 +69,21 @@
 }
 
 @media only screen and (max-width: 1000px) {
-.up,.navItems{
+/* .up,.navItems{
     display: none;
     justify-content: space-between;
     align-items: center;
 } 
 .logo{
     width: 20%;
-}
+} */
 }
 @media only screen and (max-width: 500px) {
-.up,.navItems{
+/* .up,.navItems{
     display: none;
     
 } 
 .logo{
     width: 20%;
-}
+} */
 }

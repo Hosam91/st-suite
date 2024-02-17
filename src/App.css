@@ -65,7 +65,7 @@ h6 {
   transition: width 0.5s ease-in-out;
 }
 
-.largMenu{
+.largMenu {
   width: 15%;
   position: absolute;
   background-color: #181818;
@@ -73,19 +73,8 @@ h6 {
   bottom: 0;
   left: 0;
   z-index: 9999;
-/* display: none; */
+  /* display: none; */
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .main-content {
   grid-area: main;
@@ -120,36 +109,52 @@ h6 {
   font-size: 20px;
   font-weight: bold;
 }
-.apply:hover{
+.apply:hover {
   box-shadow: 0px 15px 15px rgba(83, 172, 255, 0.39); /* A soft, glowing shadow */
   cursor: pointer;
 }
-
-
-
 
 /* MObile and Tblt style  */
 
 @media only screen and (max-width: 1000px) {
   .app-container {
+    display: grid;
+    grid-template-columns: 10% 1fr 32%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 18;
+  }
+  .largMenu {
+    width: 45%;
     display: flex;
     flex-direction: column;
   }
-  h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
- 
-  font-size:18 ;
 }
-.largMenu{
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-}
-}
-@media only screen and (max-width: 700px) {
 
+@media only screen and (max-width: 900px) {
+  .app-container {
+    display: grid;
+    grid-template-columns: 10% 1fr 35%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menu-bar {
+    width: 20%;
+    height: 100%;
+  }
+  .main-content,
+  .sidebar {
+    width: 75%;
+    margin-left: auto;
+  }
 }

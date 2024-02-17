@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './LargMenuBar.module.css'
+import styles from './SmallMenuBar.module.css'
 import logo from '../street suite logo-04.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { navTabs } from '../FakeData';
@@ -7,8 +7,7 @@ import { navTabs } from '../FakeData';
 export default function SmallMenuBar() {
   return (
     <>
-         <div className={styles.up }>
-          <div className={styles.logo}>
+           <div className={styles.logo}>
               <img src={logo} alt="street suite logo" />
           </div> 
               <ul className={ styles.navItems}>
@@ -29,8 +28,7 @@ export default function SmallMenuBar() {
               }
             
           </ul>
-          </div>
-      
+       
       </>
   )
 }
